@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseno.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Mapa de Chile con GeoJSON</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form-container">
+            <div class="dropdown-container">
+
+                <label class="altura" for="fecha">Seleccione una fecha:</label>
+                <input class="altura" type="date" id="filtrarFecha" name="fecha" min="1985-01-01">
+                <button class="button" onclick="predecir()">Predecir</button>
+            </div>
+            <div class="table-container">      
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Region</th>
+                            <th>Comuna</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                            <th>Superficie</th>    
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+                    <!--Aqui van los datos de la base de datos-->
+                    </tbody>
+                </table>
+            </div>
+        </form> 
+        <div id="map-container">
+            <div id="map"></div>
+            <canvas id="canvas-overlay"></canvas>
+        </div>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="mapeado.js"></script>
+        <script src="notas.js" defer></script>
+    </div>
+</body>
+</html>

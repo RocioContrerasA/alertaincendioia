@@ -1,0 +1,188 @@
+/*Permite que toda la página web tenga el 
+diseño predeterminado*/
+body {
+    background-color: rgb(0, 36, 29);
+    height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*Este diseño permite que los formularios, el 
+boton y la lista estén en la izquierda, mientras 
+que el mapa este a la derecha*/
+.container {
+    display: flex;
+    width: 9000vw;
+    height: 8000vh;
+    max-width: 6000px;
+    width: 100%;
+    gap: 20px;
+    padding: 0 1px;
+    box-sizing: border-box;
+}
+
+/*Este diseño permite que el mapa solo ocupe 
+cierto limit de la página*/
+#map {
+    position: absolute; /* Para que el canvas se posicione encima */
+    width: 100%; /* Ajusta según el tamaño del mapa */
+    height: 100vh; /* Que ocupe toda la altura de la pantalla */
+    top: 0;
+    left: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 60%;
+    height: 100hv;*/
+    /*pointer-events: none;  Para que no bloquee interacciones con el mapa */
+}
+
+#map-container {
+    width: 60%;
+    height: 100vh;
+    position: relative;
+}
+
+#canvas-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite interactuar con el mapa debajo */
+    z-index: 1000; /* Asegura que el canvas esté sobre el mapa */
+}
+
+/*Este diseño permite que tanto los formularios, 
+como el botón y la lista solo ocupen cierto
+porcentaje de la página*/
+.form-container {
+    width: 40%;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.form-container input[type="text"],
+.form-container button {
+    width: 100%;
+    padding: 3px;
+    margin: 3px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #2f2f2f;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 130%;
+    width: 15vw;
+}
+
+/*hace que el boton de la página web sea de
+color azul y se pueda cliquear*/
+.form-container button {
+    background-color: #007BFF;
+    cursor: pointer;
+}
+
+/*Este permite que cuando se haga click en el boton 
+este cambie de color*/
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.altura{
+    font-size: large;
+    font-weight: bolder;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/*Permite darle un diseño a la tabla*/
+.table-container {
+    max-width: 110%;
+    max-height: 500px;
+    overflow-x: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    color: #5a5858;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody {
+    border: 1xp solid;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+/*Permite darle un largo especifico a los
+formularios y al boton*/
+.dropdown-container {
+    position: relative;
+    width: 700px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+}
+
+/*Aquí le damos un estilo a la lista desplegable
+del cuadro de texto de comuna*/
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(19, 3, 3);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px; 
+    overflow-y: auto; 
+    z-index: 10;
+}
+
+/*Permite que se oculte la lista 
+por defecto y no se vean todo el tiempo*/
+.hidden {
+    display: none;
+}
+
+/*Permite darle un estilo a las opciones*/
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*Gracias a :hover podemos dar un efecto 
+a la lista cuando pasamos un raton en el*/
+.dropdown-item:hover {
+    background-color: #342929;
+}
+
+.colores{
+    color: #800026 ;
+    color: #ff0000 ;
+    color: #ff8800 ;
+    color: #ffff00 ;
+    color: #00ff00 ;
+    color: #ffffff ;
+}

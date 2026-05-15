@@ -1,0 +1,65 @@
+https://overpass-turbo.eu/#
+
+Cambia de colores el mapa según estos números
+U1	0	    0.2 transparente
+U2	0.21	0.4 verde
+U3	0.41	0.6 amarillo
+U4	0.61	0.8 naranja
+U5	0.81	1   rojo 
+
+5.5 metros * 5.5 metros
+
+el mapa debe ser de 30*30 metros el pixel en el mapa
+
+0° Ver varios tipos de inteligencia artificial para 
+programar
+
+1° Crear un JavaScript el cual pueda mostrar el mapa 
+en el sitio web de HTML
+
+2° Hacer que el mapa pueda cambiar de color con JavaScript
+
+3° Poder cambiar de color el mapa por partes para ver que 
+tan grandes son los pixeles (ppodría probar haciendo 
+alteración de pixeles de verde, amarillo y rojo)
+
+3.1° Si los pixeles son demasiado grandes encogerlos lo 
+suficiente
+
+4° Hacer que cambie de color el mapa por pixeles a través 
+de la tabla de arriba
+
+5° Con el equipo ver como integrar el JavaScript con la 
+información que ellos consiguieron para predecir incendios
+
+06/02/2025
+
+Logré mostrar el mapa en el sitio web de HTML a través de JavaScript-
+
+Avisar que estare fuera de Santiago desde el 12 al 18 de Febrero-
+
+¿Cuando tengo que Hacer la boleta de honorarios?-
+
+11/02/2025
+
+Logré mostrar el mapa en el sitio web de HTML a través de JavaScript 
+(pero solo cambia de un solo color)-
+
+¿Cual es la inteligencia artificial que se va a ocupar para el sitio web?
+-deep lerning redes convulcionales
+
+podemos usar canvas y/o heatmaps para mostrar con pixeles las zonas más 
+suceptibles a incendios en la región del Maule
+    CANVAS:
+        -Más complicado de implementar
+        -Puedes integrar la IA directamente a cada pixel
+        -Permite personalización avanzada
+        -No tiene interpolación automática 
+    HEATMAPS:
+        -Es más facil de impletentar
+        -Los valores se mezclan en un lugar en lugar de ser exactos
+        -No tiene control sobre cada pixel exacto
+        -No necesitas calcular cada pixel manualmente
+
+¿tenemos datos de prueba para comprovar si el código que creo está funcionando
+correctamente?
